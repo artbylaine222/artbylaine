@@ -1,6 +1,6 @@
 h1, h2, h3, h4, h5, h6 {
   font-family: monospace;
-  color: rgb(29, 4, 4);
+  color: black;
 }
 
 a {
@@ -10,7 +10,7 @@ a {
 body {
   margin: 0;
   font-family: monospace;
-  background-color: rgb(102, 55, 62);
+  background-color: rgb(139, 104, 112);
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -18,7 +18,7 @@ body {
 }
 
 .layout {
-  background-color: rgb(245, 212, 202);
+  background-color: rgb(236, 210, 210);
   display: flex;
   width: min(1100px, 100%);
   min-height: 100vh;
@@ -49,11 +49,30 @@ body {
   display: inline-block;
 }
 
+@font-face {
+  font-family: "Terminal 4D";
+  src: url("termi.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .banner {
-  top: 0;
-  z-index: 10;
-  background: url("riverhead.png") center / contain no-repeat;
-  padding: 80px 24px;
+   width: 300px;
+    max-width: 100%;
+  height: auto;
+ display: block;
+  margin: 0 auto;
+  color: inherit;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Terminal 4D", monospace;
+  color: rgb(241, 41, 124);
+}
+
+.site-title {
+  text-align: center;
+  font-family: "Terminal 4D", monospace;
+  color: rgb(241, 41, 124);
 }
 
 main {
